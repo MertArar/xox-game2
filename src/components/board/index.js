@@ -19,7 +19,7 @@ const Board = () => {
   const checkUser = (user) => {
     if (playMode === "cpu") {
       if (user === activeUser) {
-        return "(you)";
+        return "(sen)";
       } else {
         return "(cpu)";
       }
@@ -39,7 +39,7 @@ const Board = () => {
           ) : (
             <Oicon color="light" size="sm" />
           )}
-          turn
+          Sıra
         </div>
         <div>
           <button className="btn btn-sm board__restart" onClick={handleRestart}>
@@ -77,7 +77,7 @@ const Board = () => {
           <strong className="text-2xl"> {ties.x} </strong>
         </div>
         <div className="card bg-light">
-          <p className="text-light">ties</p>
+          <p className="text-light">beraberlik</p>
           <strong className="text-2xl"> {ties.x + ties.o} </strong>
         </div>
         <div className="card bg-yellow">

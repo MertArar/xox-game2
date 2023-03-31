@@ -9,7 +9,7 @@ const Win = () => {
     <div className="score">
       {winner && winner !== "no" ? (
         <>
-          <p>yoy win!</p>
+          <p>Zafer!</p>
           <h3
             className={`score__title ${
               winner === "o" ? "text-yellow" : "text-blue"
@@ -17,15 +17,15 @@ const Win = () => {
           >
             {winner === "x" && <Xicon />}
             {winner === "o" && <Oicon />}
-            Takes the round
+            Turu kazandı!
           </h3>
         </>
       ) : (
-        <h3 className="score__title text-yellow">No Winner !</h3>
+        <h3 className="score__title text-tie">Kazanan yok!</h3>
       )}
       <div className="score__btns">
         <button className="btn btn-sm" onClick={handleReset}>
-          Quit
+          Çıkış
         </button>
         <button
           className={`btn   btn-sm ${
@@ -33,7 +33,7 @@ const Win = () => {
           }`}
           onClick={handleNextRound}
         >
-          Next Round
+          Sonraki tur
         </button>
       </div>
     </div>

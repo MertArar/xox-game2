@@ -5,16 +5,16 @@
 }
 
 :root {
-  --color-bg-dark: #192a33;
-  --color-bg-light: #1f3640;
+  --color-bg-dark: #192127;
+  --color-bg-light: #36454f;
   --color-gray: #a8bec9;
   --color-gray-dark: #7a8991;
-  --color-yellow: #f2b238;
-  --color-yellow-dark: #cd8d16;
-  --color-blue: #30c4be;
-  --color-blue-dark: #128c89;
+  --color-yellow: #ff4625;
+  --color-yellow-dark: #da3b1f;
+  --color-blue: #2c87ff;
+  --color-blue-dark: #246cca;
 
-  --shadow-y: 6px;
+  --shadow-y: 2px;
 }
 
 html {
@@ -116,13 +116,13 @@ body {
 }
 
 .btn:hover {
-  --shadow-y: 8px;
+  --shadow-y: 4px;
   transform: translateY(-2px);
 }
 
 .btn:active {
   transform: translateY(2px);
-  --shadow-y: 4px;
+  --shadow-y: 2px;
 }
 
 .btn-sm {
@@ -130,7 +130,7 @@ body {
 }
 
 .btn-sm:hover {
-  --shadow-y: 6px;
+  --shadow-y: 4px;
 }
 
 .btn-sm:active {
@@ -138,11 +138,13 @@ body {
 }
 
 .btn-yellow {
+  color: #fff;
   background-color: var(--color-yellow);
   box-shadow: 0 var(--shadow-y) 0 var(--color-yellow-dark);
 }
 
 .btn-blue {
+  color: #fff;
   background-color: var(--color-blue);
   box-shadow: 0 var(--shadow-y) 0 var(--color-blue-dark);
 }
@@ -242,11 +244,17 @@ body {
 .board__turn {
   border-radius: 5px;
   background-color: var(--color-bg-light);
-  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
   padding: 8px 12px;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
   display: flex;
   align-items: center;
   gap: 4px;
+}
+
+.board__restart {
+  margin-bottom: 1.2rem;
 }
 
 .board__restart svg {
@@ -269,6 +277,7 @@ body {
 }
 
 .board__body .card {
+  color: white;
   height: 120px;
   display: flex;
   align-items: center;
@@ -293,6 +302,7 @@ body {
 }
 
 .board__footer .card {
+  color: white;
   gap: 15px;
 }
 
@@ -350,5 +360,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 25px;
+}
+
+.restart__btns button {
+  color: #fff;
+}
+
+.text-tie {
+  color: rgb(220, 240, 47);
 }
